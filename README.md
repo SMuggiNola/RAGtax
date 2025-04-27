@@ -6,7 +6,7 @@
 
 ## 📚 What is RAGtax?
 
-RAGtax is a **Retrieval-Augmented Generation (RAG)** system designed to help individuals navigate federal tax law more clearly and calmly.
+RAGtax is a **Retrieval-Augmented Generation (RAG)** system designed to help individuals — starting with my sister — navigate federal tax law more clearly and calmly.
 
 Rather than pretending to replace human judgment, RAGtax helps users:
 
@@ -41,6 +41,22 @@ Built around a **retro terminal interface**, **private server retrieval**, and a
    - Integrate models like **Mistral 7B** to generate guidance — *but always defer to the real text*.
 5. **Transparency by Design**  
    - Every AI output links to its underlying source; users are encouraged to verify, not blindly trust.
+
+---
+
+## ⚙️ System Requirements
+
+- **Basic Use (Markdown Search and Retrieval):**
+  - CPU-only
+  - Browser and local server (FastAPI) are sufficient
+
+- **Optional Advanced Features (Model Inference / Summarization):**
+  - Recommended GPU for efficient model inference (e.g., Mistral 7B or similar)
+  - The system can offload AI summarization tasks to a local GPU if available
+
+- **Private-first by design:**
+  - No external cloud servers required
+  - Full operation stays on the user's machine
 
 ---
 
