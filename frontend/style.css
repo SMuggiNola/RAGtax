@@ -1,0 +1,46 @@
+/* Body Styling */
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+    color: #00FF00; /* System text is green */
+    font-family: Consolas, 'Courier New', Courier, monospace;
+    font-size: 1.25rem; /* Larger text for readability */
+    padding: 20px; /* Push content in from the edges */
+}
+
+/* Terminal Container */
+#terminal {
+    width: 80%;
+    max-width: 800px;
+    height: 90%;
+    background-color: black;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Output Area (System Responses + User History) */
+#output {
+    flex-grow: 1;
+    white-space: pre-wrap;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    font-family: inherit; /* Keep terminal font */
+}
+
+/* Blinking Cursor Effect */
+.blinking-cursor {
+    display: inline-block;
+    width: 10px;
+    animation: blink 1s steps(2, start) infinite;
+    color: #FFFFFF; /* Blinking cursor is white */
+}
+
+/* Blinking Animation */
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
